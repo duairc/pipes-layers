@@ -1,0 +1,34 @@
+name:           pipes-layers
+version:        0.1
+synopsis:       Orphan layers instances for pipes
+license:        MPL-2.0
+license-file:   LICENSE
+author:         Shane O'Brien
+maintainer:     shane@duairc.com
+stability:      Experimental
+category:       Type
+cabal-version:  >= 1.6
+build-type:     Simple
+homepage:       https://github.com/duairc/pipes-layers
+bug-reports:    https://github.com/duairc/pipes-layers/issues
+
+extra-source-files:
+  LICENSE
+
+library
+  hs-source-dirs:
+    src
+
+  exposed-modules:
+    Pipes.Layers
+
+  build-depends:
+    base > 4 && < 6,
+    layers >= 1.0 && < 2,
+    pipes >= 4 && < 5
+
+  ghc-options: -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/duairc/pipes-layers.git
